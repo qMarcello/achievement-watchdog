@@ -1,4 +1,4 @@
-watchdog
+git+https://github.com/gorakhargosh/watchdog.git
 pystray
 Pillow
 win11toast
