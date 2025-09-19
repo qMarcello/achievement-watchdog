@@ -185,7 +185,7 @@ class AchievementHandler(FileSystemEventHandler):
     async def send_notification(self, title, description, icon_path=None):
         try:
             icon = {'src': icon_path, 'placement': 'appLogoOverride'} if icon_path else None
-            toast(title, description, icon=icon, audio=r"achievement_sound.wav", app_id="Achievement Unlocked")
+            toast(title, description, icon=icon, audio=r"achievement_sound.wma", app_id="Achievement Unlocked")
             logging.info(f"Notification sent: {title} - {description}")
         except Exception as e:
             logging.error(f"Error displaying notification: {e}")
